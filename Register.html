@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="resets.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Create account - Unity Finance Bank</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="site-logo">
+            <img src="/images/logo.png" alt="Website logo">
+        </a>
+        <nav>
+            <div class="header-nav-links">
+                <a href="index.html" class="header-nav-link">Home</a>
+                <a href="#Service" class="header-nav-link">Services</a>
+                <a href="#Contact" class="header-nav-link">Contact</a>
+                <a href="#FAQ" class="header-nav-link">FAQ</a>
+            </div>
+    
+            <div class="header-btns">
+                <a href="Sign-in.html" class="login-btn">Sign in</a>
+                <a href="Register.html" class="register-btn-wrapper">
+                    <p class="register">Open Account</p>
+                    <i class="bi bi-arrow-right-short"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="hamburger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <main>
+        <button type="button" class="back-to-top" id="back-to-top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+
+        <section class="register-section">
+            <div class="register-text-wrapper">
+                <div class="register-text-heading">
+                    <h3 class="register-text-title">Create an account</h3>
+                    <p class="register-text-desc">The information given in this form is considered as the information of the primary account owner</p>
+                </div>
+                <form class="register-form">
+                    <div class="account-info-container">
+                        <p class="account-info-title">Account Information</p>
+                        <div class="account-info-wrapper">
+                            <div class="account-type-input-wrapper">
+                                <label for="account-type">Account type</label>
+                                <select id="account-type" class="account-type" required>
+                                    <option value="" disabled selected>Select your option</option>
+                                    <option value="personal">Checking Account</option>
+                                    <option value="personal">Savings Account</option>
+                                    <option value="personal">A Money Market Account</option>
+                                    <option value="personal">Certificates of Deposit (CD)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="currency-type-input-wrapper">
+                                <label for="currency-type">Currency type</label>
+                                <select id="currency-type" class="currency-type" required>
+                                    <option value="" disabled selected>Select your option</option>
+                                    <option value="rub">RUB - Russian Ruble</option>
+                                    <option value="cad">CAD - Canadian Dollar</option>
+                                    <option value="USD">USD - Us Dollar</option>
+                                    <option value="EUR">EUR - Euro</option>
+                                    <option value="gbp">GBP - Pound Sterling</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="personal-info-wrapper">
+                        <p class="personal-info-title">Personal Information</p>
+                        <div class="name-input-wrapper">
+                            <div class="first-name-input-wrapper">
+                                <label for="first-name">First name<span style="color:red;">*</span></label>
+                                <input type="text" id="first-name" class="first-name" placeholder="John" required/>
+                            </div>
+
+                            <div class="last-name-input-wrapper">
+                                <label for="last-name">Last name<span style="color:red;">*</span></label>
+                                <input type="text" id="last-name" class="last-name" placeholder="Doe" required />
+                            </div>
+                        </div>
+
+                        <div class="email-input-wrapper">
+                            <label for="user-email">Email<span style="color:red;">*</span></label>
+                            <input type="email" id="user-email" class="user-email" placeholder="example@email.com" required/>
+                        </div>
+
+                        <div class="num-dob-input-wrapper">
+                            <div class="phone-number-input-wrapper">
+                                <label for="phone-number">Phone number</label>
+                                <input type="tel" id="phone-number" class="phone-number" placeholder="+country code (000) 000-0000"/>
+                            </div>
+
+                            <div class="date-of-birth-input-wrapper">
+                                <label for="dob">Date of birth<span style="color:red;">*</span></label>
+                                <input type="text" id="dob" class="dob" placeholder="MM-DD-YYYY" required/>
+                            </div>
+                        </div>
+
+                        <div class="address-input-wrapper">
+                            <div class="street-addr-input-wrapper">
+                                <label for="street-address">Street address<span style="color:red;">*</span></label>
+                                <input type="text" id="street-address" class="street-address" required/>
+                            </div>
+
+                            <div class="city-state-input-wrapper">
+                                <div class="city-input-wrapper">
+                                    <label for="city">City<span style="color:red;">*</span></label>
+                                    <input type="text" id="city" class="city" required/>
+                                </div>
+                                
+                                <div class="state-input-wrapper">
+                                    <label for="state">State / Province<span style="color:red;">*</span></label>
+                                    <input type="text" id="state" class="state" required/>
+                                </div>
+                            </div>
+
+                            <div class="zip-country-input-wrapper">
+                                <div class="zip-input-wrapper">
+                                    <label for="zip-code">Zip code / Postal<span style="color:red;">*</span></label>
+                                    <input type="text" id="zip-code" class="zip-code" required/>
+                                </div>
+                            
+                                <div class="country-input-wrapper">
+                                    <label for="country">Country<span style="color:red;">*</span></label>
+                                    <input type="text" id="country" class="country" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="citizen-marriage-status-input-wrapper">
+                            <div class="citizen-input-wrapper">
+                                <label for="citizenship">Citizenship<span style="color:red;">*</span></label>
+                                <input type="text" id="citizenship" class="citizenship" placeholder="e.g., US, Canada, etc." required/>
+                            </div>
+
+                            <div class="marriage-status-input-wrapper">
+                                <label for="marriage-status">Marital status<span style="color:red;">*</span></label>
+                                <input type="text" id="marriage-status" class="marriage-status" required/>
+                            </div>
+                        </div>
+
+                        <div class="occupation-employer-input-wrapper">
+                            <div class="occupation-input-wrapper">
+                                <label for="occupation">Occupation</label>
+                                <input type="text" id="occupation" class="occupation"/>
+                            </div>
+                        
+                            <div class="employer-input-wrapper">
+                                <label for="employer">Employer</label>
+                                <input type="text" id="employer" class="employer" />
+                            </div>
+                        </div>
+
+                        <div class="terms-wrapper">
+                            <p class="terms-text">
+                                By submitting this form, I acknowledge that the information I've given is accurate and I agree to all the terms and conditions.
+                            </p>
+                            <div class="terms-checkbox-wrapper">
+                                <input type="checkbox" id="agree-to-terms" required/>
+                                <label for="agree-to-terms">I agree to the <a href="">terms & conditions</a></label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="register-btn" id="register-btn">Submit form</button>
+
+                    <p class="sign-in-text">Already have an account?<a href="Sign-in.html" class="sign-in-now">Sign in</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
